@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,12 +16,11 @@
             android:id="@+id/Inning"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
             android:text="1 Inning"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center_horizontal"
-            android:layout_margin="8dp"/>
-
+            android:textStyle="bold" />
 
 
         <LinearLayout
@@ -33,54 +31,54 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="@string/ball"
-                android:textStyle="bold"
                 android:textSize="24sp"
-                android:layout_margin="8dp"/>
+                android:textStyle="bold" />
 
             <TextView
 
                 android:id="@+id/Ball"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
                 android:text="0"
-                android:textSize="24sp"
-                android:layout_margin="8dp"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="@string/strike"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_margin="8dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/Strike"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
                 android:text="0"
-                android:textSize="24sp"
-                android:layout_margin="8dp"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:text="@string/out"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_margin="8dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/Out"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
                 android:text="0"
-                android:textSize="24sp"
-                android:layout_margin="8dp"/>
+                android:textSize="24sp" />
 
         </LinearLayout>
 
@@ -95,135 +93,135 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
                 android:text="@string/guest"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:gravity="center_horizontal"
-                android:layout_margin="4dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/GuestScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:textSize="34sp"
-                android:text="0"/>
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="34sp" />
 
             <Button
                 android:id="@+id/GuestScoreBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/score"
                 android:background="@color/colorBlue"
-                android:onClick="guestScoreBtn"/>
+                android:onClick="guestScoreBtn"
+                android:text="@string/score" />
 
             <Button
                 android:id="@+id/GuestBallBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/ball"
                 android:background="@color/colorBlue"
-                android:onClick="updateBallBtn"/>
+                android:onClick="updateBallBtn"
+                android:text="@string/ball" />
 
             <Button
                 android:id="@+id/GuestStrikeBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/strike"
                 android:background="@color/colorBlue"
-                android:onClick = "updateStrikeBtn"/>
+                android:onClick="updateStrikeBtn"
+                android:text="@string/strike" />
 
             <Button
                 android:id="@+id/GuestOutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/out"
                 android:background="@color/colorBlue"
-                android:onClick = "updateOutBtn"/>
+                android:onClick="updateOutBtn"
+                android:text="@string/out" />
 
         </LinearLayout>
 
         <View
-            android:layout_height="match_parent"
             android:layout_width="1dp"
-            android:background="@color/colorPrimaryDark"/>
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
 
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
                 android:text="@string/home"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:gravity="center_horizontal"
-                android:layout_margin="4dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/HomeScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:layout_margin="4dp"
-                android:textSize="34sp"
-                android:text="0"/>
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="34sp" />
 
             <Button
                 android:id="@+id/HomeScoreBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/score"
                 android:background="@color/colorGrey"
                 android:enabled="false"
-                android:onClick="homeScoreBtn"/>
+                android:onClick="homeScoreBtn"
+                android:text="@string/score" />
 
             <Button
                 android:id="@+id/HomeBallBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/ball"
                 android:background="@color/colorGrey"
                 android:enabled="false"
-                android:onClick="updateBallBtn"/>
+                android:onClick="updateBallBtn"
+                android:text="@string/ball" />
 
             <Button
                 android:id="@+id/HomeStrikeBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/strike"
                 android:background="@color/colorGrey"
                 android:enabled="false"
-                android:onClick = "updateStrikeBtn"/>
+                android:onClick="updateStrikeBtn"
+                android:text="@string/strike" />
 
             <Button
                 android:id="@+id/HomeOutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text = "@string/out"
                 android:background="@color/colorGrey"
                 android:enabled="false"
-                android:onClick = "updateOutBtn"/>
+                android:onClick="updateOutBtn"
+                android:text="@string/out" />
 
         </LinearLayout>
 
@@ -240,26 +238,26 @@
         <Button
             android:id="@+id/ResetBallFoulStrike"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text = "Reset Ball And Strike"
-            android:onClick="resetBallStrikeBtn"/>
+            android:layout_weight="1"
+            android:onClick="resetBallStrikeBtn"
+            android:text="Reset Ball And Strike" />
 
         <Button
             android:id="@+id/ResetInning"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text = "Reset Inning"
-            android:onClick = "resetInningBtn"/>
+            android:layout_weight="1"
+            android:onClick="resetInningBtn"
+            android:text="Reset Inning" />
 
         <Button
             android:id="@+id/resetGame"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text = "Reset Game"
-            android:onClick = "resetGameBtn"/>
+            android:layout_weight="1"
+            android:onClick="resetGameBtn"
+            android:text="Reset Game" />
 
     </LinearLayout>
 
